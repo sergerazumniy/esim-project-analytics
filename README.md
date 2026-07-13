@@ -79,7 +79,3 @@ Two CSVs, ~26.9k users and ~3.6k orders, covering January-February 2026. Full da
 ## Scope note
 
 This project focuses on the revenue-drop diagnosis and the cohort/conversion analysis. It does not cover the broader take-home exercise this dataset originally came from (cross-source data reconciliation, anomaly-detection agent design, etc.) - this repo is scoped specifically as a focused analytics case study.
-
-## License
-
-[MIT](LICENSE)
