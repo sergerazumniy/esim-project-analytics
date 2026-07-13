@@ -38,19 +38,19 @@ The most useful finding here isn't "revenue fell 13.5%" - it's that two of the m
 
 ## Repository structure
 
-******
+```
 esim-project-analytics/
-├── data/
-├── sql/
+├── data/                          # raw CSVs (synthetic, safe to publish) + data dictionary
+├── sql/                           # all SQL used in the analysis, runnable standalone
 │   ├── 01_base_view.sql
 │   ├── 02_data_quality_checks.sql
 │   ├── 03_revenue_drop_hypotheses.sql
 │   └── 04_cohort_conversion.sql
 ├── src/
-│   └── db.py                    
-├── notebooks/             
-└── reports/figures/
-******
+│   └── db.py                      # DuckDB connection + SQL-file query loader used by every notebook
+├── notebooks/                     # the analysis, in reading order (00 -> 03)
+└── reports/figures/               # charts exported from the notebooks, embedded above
+```
 
 ## Tech stack
 
