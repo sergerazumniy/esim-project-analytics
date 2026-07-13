@@ -63,16 +63,16 @@ esim-project-analytics/
 
 No database setup needed - DuckDB runs in-process and loads the CSVs on the fly.
 
-******bash
-git clone <this-repo-url>
+```bash
+git clone <repository-url>
 cd esim-project-analytics
 pip install -r requirements.txt
 jupyter notebook notebooks/00_data_quality_and_overview.ipynb
-******
+```
 
 ## Data
 
-Two CSVs, ~26.9k users and ~3.6k orders, covering January-February 2026. Full data dictionary and known quirks: [**data/README.md**](data/README.md).
+Two CSVs, 26.9k users and 3.6k orders, covering January-February 2026. Full data dictionary and known quirks: [**data/README.md**](data/README.md).
 
 > The dataset is synthetic (generated for a take-home analytics exercise) and contains no real personal data, which is why it's committed to this repository in full instead of being gitignored.
 
